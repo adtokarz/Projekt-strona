@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('roboto/Roboto-Light.ttf');
+}
+
+body {
+    font-family: roboto;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vh;
+
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    border-radius: 0 0 20% 20%;
+    opacity: 80%;
+}
+
+.home {
+    position: absolute;
+    left: 10%;
+    top: .8%;
+}
+
+.home a {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    transition: .3s;
+}
+
+
+.menu ul {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    font-size: 30px;
+    right: 3%;
+    top: 0;
+
+
+
+}
+
+.menu ul li {
+    padding: 10px;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+
+.home a:hover {
+    border-bottom: 1px solid white;
+    font-size: 55px;
+
+}
+
+section {
+    position: absolute;
+    top: 10vh;
+    border-radius: 5%;
+    height: 85%;
+    width: 80%;
+    right: 10%;
+    background-color: #F8F8F8;
+    background-repeat: repeat;
+    overflow: hidden;
+
+}
+
+.galeria {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+
+}
+
+section div {
+    flex-basis: 5%;
+    padding: 5px;
+}
+
+section .galeria img {
+    width: 30vh;
+    height: 20vh;
+    border: 3px solid black;
+    border-radius: 50% 50%;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 70px;
+
+}
+
+.menu a:hover {
+    border-bottom: 1px solid white;
+    font-size: 35px;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    color: white;
+    height: 3vh;
+    width: 100%;
+    bottom: 5px;
+    font-size: 20px;
+}
+
+.picture {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.picture img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+
+}
+
+.galeria a {
+    font-size: 40px;
+    text-decoration: none;
+    color: darkgreen;
+    border-bottom: 1px solid darkgreen;
+    transition: .2s;
+}
+
+.galeria a:hover {
+    font-size: 45px;
+}
+
+section .aboutus {
+    padding: 55px;
+}
+
+section .aboutus a {
+    font-size: 40px;
+
+}
+
+
+.contactForm {
+    position: absolute;
+    top: 30vh;
+    transition: all .4s ease-in-out;
+    width: 100%;
+    left: calc(50% - 24%);
+
+
+}
+
+.form-control {
+    width: 50%;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid darkgreen;
+    color: black;
+    font-size: 18px;
+
+}
+
+.forCon {
+    position: absolute;
+    color: red;
+    width: 100%;
+    top: 10vh;
+
+}
+
+.form-controlSubmit {
+    position: absolute;
+    top: 25vh;
+    color: black;
+    height: 50px;
+    background: transparent;
+    cursor: pointer;
+    width: 200px;
+    left: 55vh;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    section>div {
+        flex-basis: 5%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    section>div {
+        padding: 10px;
+        flex-basis: 5%;
+    }
+}
+
+@media (max-width: 640px) {
+    section>div {
+        padding: 15px;
+
+    }
+}
