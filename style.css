@@ -211,26 +211,13 @@ section .aboutus a {
     left: 55vh;
 }
 
-
-
-
-@media (max-width: 1200px) {
-    section>div {
-        flex-basis: 5%;
-        padding: 15px;
-    }
+section .prace {
+    width: 100%;
+    line-height: 10vh;
+    text-align: center;
 }
 
-@media (max-width: 1024px) {
-    section>div {
-        padding: 10px;
-        flex-basis: 5%;
-    }
-}
-
-@media (max-width: 640px) {
-    section>div {
-        padding: 15px;
-
-    }
+section .prace a {
+    color: darkgreen;
+    font-size: 30px;
 }
