@@ -18,7 +18,7 @@ for (n = 0; n < randomimages.length; n++) {
 document.write(
     '<center><a><img name="defaultimage"' +
     randomimages[Math.floor(Math.random() * (randomimages.length))] +
-    '" width=300 height=150 border=3px  ></a></center>')
+    '" width=300 height=140vh border=3px  ></a></center>')
 
 function rotateimage() {
 

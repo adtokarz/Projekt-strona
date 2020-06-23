@@ -11,14 +11,14 @@
 
 body {
     font-family: roboto;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     height: 100vh;
     width: 100vh;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     min-width: 100vh;
-
+    background-color: darkgreen;
 }
 
 header {
@@ -220,4 +220,50 @@ section .prace {
 section .prace a {
     color: darkgreen;
     font-size: 30px;
+}
+
+
+
+@media (max-width: 1200px) {
+    section {
+        height: 110vh;
+    }
+
+    footer {
+        bottom: -15vh;
+        color: black;
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        height: 115vh;
+    }
+
+    footer {
+        bottom: -20vh;
+        color: black;
+    }
+}
+
+@media (max-width: 640px) {
+    section {
+        height: 180vh;
+    }
+
+    footer {
+        bottom: -85vh;
+        color: black;
+    }
+}
+
+@media (max-width: 500px) {
+    section {
+        height: 220vh;
+    }
+
+    footer {
+        bottom: -130vh;
+        color: black;
+    }
 }
